@@ -1,0 +1,41 @@
+二、HTML DOM
+
+ 1.选取对象
+
+ Element document.getElementById(string id)
+
+ 说明:根据ID获取文档中唯一的HTML元素
+
+ NodeList document.getElementsByTagName(string tagName)
+
+ 说明:获取文档中由指定的标记组成的集合(数组)
+
+ NodeList Element.getElementsByTagName(string tagName)
+
+ 说明:获取元素中由指定的标记组成的集合(数组)
+
+ NodeList document.getElementsByName(string name)
+
+ 说明:获取文档中由name属性相同的标记组成的集合(数组) -- 针对表单元素使用
+
+2.属性控制
+
+A.对于单个单词的HTML标记属性即HTML DOM对象属性;
+
+B.对于合成词的HTML标记属性(如table标记的cellpading、cellspacing属性)在HTML DOM编程时,采用"驼峰标记法"命名(如cellPadding、cellSpacing)
+
+C.对于HTML标记的class属性,在HTML DOM编程时使用className取代;
+  (因为class是ECMAScript中的关键字)
+
+D.对于HTML标记的布尔属性(如单/复选框的checked、列表项的selected属性)在HTML DOM编程时采用boolean类型表示;
+
+E.在HTML DOM编程时,某些HTMLDOM对象有自己特有的属性/方法;
+
+F.HTML标记的style属性在HTML DOM编程时形成CSSStyleDeclaration/CSS2Properties对象;
+
+
+控制HTMLDOM对象的行内样式的语法是:
+
+object.style.CSS属性名称
+
+
